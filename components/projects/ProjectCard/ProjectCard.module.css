@@ -1,0 +1,73 @@
+.projectCard {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 1rem;
+    cursor: pointer;
+
+    background: var(--surface);
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 0 0 5px var(--primary);
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h3 {
+    margin: 0;
+}
+.description {
+    line-height: 1.7;
+}
+.techStack {
+    display: flex;
+    gap: 8px;
+}
+.actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: auto;
+}
+.actions a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: var(--primary);
+    transition: all 0.2s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+}
+.actions a:hover {
+    box-shadow: 0 0 10px var(--primary);
+    transform: translateY(-4px);
+}
+.projectCard:hover .arrow {
+    transform: translate(3px, -3px);
+}
+
+.arrow {
+    transition: transform .2s ease;
+}
+.projectCard:hover {
+    box-shadow: 0 0 10px var(--primary);
+    transform: translateY(-4px);
+    filter: brightness(1.05);
+}
+.projectCard:hover .arrow {
+    opacity: 1;
+    transform: translate(2px, -2px);
+}
+.leftHeader {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+.statuses {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}

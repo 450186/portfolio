@@ -1,0 +1,37 @@
+.projects {
+    padding: 0.5rem 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px var(--primary);
+
+    margin: 10px auto;
+    max-width: 1260px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+.projects h2 {
+    margin: 1rem;
+}
+.grid > :first-child {
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .grid > :first-child {
+    grid-column: auto;
+  }
+}

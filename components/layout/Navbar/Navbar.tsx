@@ -3,7 +3,7 @@ import Link from "next/link";
 import styles from "./Navbar.module.css";
 import clsx from "clsx";
 import { usePathname } from "next/navigation";
-import { type NavLink } from "@/types/navLink";
+import type { NavLink } from "@/types/NavLink";
 
 export default function Navbar() {
     const pathName = usePathname();

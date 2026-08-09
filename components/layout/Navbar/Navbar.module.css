@@ -3,8 +3,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 100;
+  backdrop-filter: blur(12px);
+  background: rgba(17, 17, 17, 0.8);
 
-  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }

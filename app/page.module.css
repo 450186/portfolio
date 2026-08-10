@@ -1,0 +1,12 @@
+.lastRow {
+    display: grid;
+    grid-template-columns: 2.5fr 2fr;
+    margin: 1rem auto;
+    max-width: 1260px;
+    gap: 1rem;
+}
+@media (max-width: 700px) {
+    .lastRow {
+        grid-template-columns: 1fr;
+    }
+}

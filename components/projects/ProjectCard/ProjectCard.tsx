@@ -30,7 +30,7 @@ export default function ProjectCard({project}: ProjectCardProps) {
                     </div>
                     <p>{project.tagLine}</p>
                 </div>
-                <ArrowUpRight size={20} className="arrow" />
+                <ArrowUpRight size={20} className={styles.arrow} />
             </div>
             <p className={styles.description}>
                 {project.description}

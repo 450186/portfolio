@@ -1,0 +1,60 @@
+.contactSection {
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px var(--primary);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.contactSection:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px var(--primary);
+}
+.contactSection:hover .arrow {
+    transform: translate(4px, -4px) scale(1.1);
+    color: var(--primary);
+}
+
+.contactSection h2, .contactSection h3, .contactSection p {
+    margin: 0;
+}
+.spacer {
+    flex-grow: 1;
+}
+.links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.links a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--text);
+    padding: 0.5rem 1rem;
+    border-radius: 12px;
+    background: transparent;
+    border: 2px solid var(--primary);
+    font-weight: 700;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.links a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px var(--primary);
+}

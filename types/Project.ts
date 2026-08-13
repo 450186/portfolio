@@ -1,4 +1,13 @@
-export type ProjectStatus = "Featured" | "In Progress"| "University Project";
+export type ProjectStatus =
+    | "Featured"
+    | "In Progress"
+    | "University Project";
+
+export type ProjectChallenge = {
+    title: string;
+    description: string;
+};
+
 export interface Project {
     title: string;
     tagLine: string;
@@ -13,6 +22,17 @@ export interface Project {
     liveLink?: string;
 
     image: string;
+    screenshots: string[];
+
+    overview: string;
+    features: string[];
+
+    challenges: ProjectChallenge[];
+
+    lessons: string[];
+    futureImprovements: string[];
 
     featured?: boolean;
+
+    date: string;
 }

@@ -1,0 +1,158 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px var(--primary);
+    margin: 20px auto;
+    width: 1260px;
+}
+.container:first-of-type {
+    justify-content: center;
+    align-items: center;
+}
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.25rem;
+}
+.subtitle {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.statuses {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.header h3 {
+    display: contents;
+}
+.title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+    text-decoration: underline;
+}
+.description {
+    margin: 0;
+}
+.date,
+.tagLine {
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+}
+.separator {
+    font-size: 1.5rem;
+    margin-top: 5px;
+    font-weight: bold;
+    align-self: flex-end;
+}
+.techStack {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    width: 50%;
+    margin: 0 auto;
+    justify-content: center;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+.actions a {
+    background: transparent;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: 
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+.actions a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px var(--primary);
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    row-gap: 2rem;
+}
+.feature {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+}
+.checkIcon {
+    color: var(--primary);
+}
+.challenges {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.challenges h3 {
+    grid-column: 1 / -1;
+}
+.challenges h4 {
+    margin-bottom: 0;
+}
+.challenge {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.5rem;
+}
+.challenge.odd:last-child {
+    grid-column: 1 / -1;
+    width: 50%;
+    margin: 0 auto;
+}
+.lastRow {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    max-width: 1260px;
+    margin: 20px auto;
+}
+.lessons, .improvements {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.5rem;
+    justify-content: space-evenly;
+    box-shadow: 3px 4px 5px var(--primary);
+}
+.lessons h4 {
+    margin-bottom: 0;
+}
+.lessons p {
+    margin: 0;
+}
+.lesson, .improvement {
+    display: flex;
+    flex-direction: row;
+    gap: 0.25rem;
+    align-items: center;
+}

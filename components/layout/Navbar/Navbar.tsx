@@ -24,8 +24,11 @@ export default function Navbar() {
                     key={link.href}
                     href={link.href}
                     className={clsx(
-                        styles.link,
-                        pathName === link.href && styles.active
+                    styles.link,
+                    (
+                        pathName === link.href ||
+                        (link.href !== "/" && pathName.startsWith(link.href))
+                    ) && styles.active
                     )}
                     >
                     {link.label}

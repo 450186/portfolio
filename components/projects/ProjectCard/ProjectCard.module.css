@@ -9,6 +9,11 @@
     border: 1px solid var(--primary);
     border-radius: 8px;
     box-shadow: 0 0 5px var(--primary);
+
+    transition:
+        box-shadow 0.2s ease,
+        transform 0.2s ease,
+        filter 0.2s ease;
 }
 .header {
     display: flex;
@@ -47,11 +52,6 @@
     box-shadow: 0 0 10px var(--primary);
     transform: translateY(-4px);
 }
-.projectCard:hover .arrow {
-    transform: translate(4px, -4px) scale(1.1);
-    color: var(--primary);
-}
-
 .arrow {
     transition: transform .2s ease;
 }
@@ -63,6 +63,7 @@
 .projectCard:hover .arrow {
     opacity: 1;
     transform: translate(2px, -2px);
+    color: var(--primary);
 }
 .leftHeader {
     display: flex;
@@ -73,4 +74,15 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
+}
+@media (max-width: 600px) {
+    .leftHeader {
+        flex-wrap: wrap;
+    }
+    .statuses {
+        flex-wrap: wrap;
+    }
+    .actions {
+        flex-wrap: wrap;
+    }
 }

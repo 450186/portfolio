@@ -76,3 +76,30 @@
     transform: scale(1.2);
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .carousel {
+        width: 100%;
+    }
+
+    .carouselInner {
+        width: 100%;
+        max-height: none;
+    }
+
+    .carouselInner img {
+        width: auto;
+        max-width: 100%;
+        height: auto;
+        max-height: 450px;
+        object-fit: contain;
+    }
+
+    .controls button:first-child {
+        transform: translateX(-25%);
+    }
+
+    .controls button:last-child {
+        transform: translateX(25%);
+    }
+}

@@ -175,29 +175,42 @@
 @media (max-width: 600px) {
     .hero {
         min-height: auto;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
     }
-
+    .content {
+        padding: 0;
+    }
     .title {
         font-size: 2rem;
     }
-
+    .title,
+    .greeting,
+    .description,
+    .techStack,
+    .actions {
+        margin-left: 0;
+        margin-right: 0;
+    }
     .actions {
         flex-direction: column;
     }
-
     .button {
         width: 100%;
         text-align: center;
     }
-
     .heroVisual {
         grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
-
     .jobPilot,
     .playVault,
     .grazeGood {
         grid-column: 1;
+        grid-row: auto;
+    }
+    .project {
+        display: block;
+        text-decoration: none;
+        color: inherit;
     }
 }

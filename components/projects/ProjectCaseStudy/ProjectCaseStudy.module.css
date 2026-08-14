@@ -8,7 +8,8 @@
     border-radius: 16px;
     box-shadow: 3px 4px 5px var(--primary);
     margin: 20px auto;
-    width: 1260px;
+    max-width: 1260px;
+    width: 100%;
 }
 .container:first-of-type {
     justify-content: center;
@@ -76,7 +77,6 @@
     border-radius: 8px;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    transition: all 0.2s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
@@ -102,6 +102,7 @@
 }
 .checkIcon {
     color: var(--primary);
+    flex-shrink: 0;
 }
 .challenges {
     display: grid;
@@ -147,7 +148,9 @@
 .lessons h4 {
     margin-bottom: 0;
 }
-.lessons p {
+.lessons p,
+.improvements p,
+.features p {
     margin: 0;
 }
 .lesson, .improvement {
@@ -155,4 +158,67 @@
     flex-direction: row;
     gap: 0.25rem;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    .header,
+    .subtitle,
+    .statuses,
+    .actions {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .techStack {
+        width: 100%;
+    }
+    .features {
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 1rem;
+    }
+    .challenges {
+        grid-template-columns: 1fr;
+    }
+    .challenges h3 {
+        grid-column: auto;
+    }
+    .challenge.odd:last-child {
+        grid-column: auto;
+        width: 100%;
+        margin: 0;
+    }
+    .lastRow {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+    .lessons, .improvements {
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0.75rem;
+    }
+    .header {
+        flex-direction: column;
+        gap: 0.75rem;
+        text-align: center;
+    }
+    .subtitle {
+        justify-content: center;
+        text-align: center;
+    }
+    .actions {
+        width: 100%;
+        flex-direction: column;
+    }
+    .actions a {
+        width: 100%;
+        justify-content: center;
+    }
+    .feature,
+    .lesson,
+    .improvement {
+        align-items: flex-start;
+    }
 }

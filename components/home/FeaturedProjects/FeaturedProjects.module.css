@@ -29,9 +29,15 @@
 @media (max-width: 700px) {
   .grid {
     grid-template-columns: 1fr;
+    padding: 0.5rem;
   }
-
   .grid > :first-child {
     grid-column: auto;
+  }
+  .projects {
+    padding: 0.5rem;
+  }
+  .projects h2 {
+    margin: 0.75rem;
   }
 }

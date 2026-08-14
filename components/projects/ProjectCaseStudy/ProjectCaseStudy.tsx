@@ -5,7 +5,6 @@ import Badge from "@/components/ui/badge/Badge";
 import { FaGithub, FaLink, FaSquareCheck } from "react-icons/fa6";
 import ScreenshotCarousel from "../ScreenshotCarousel/ScreenshotCarousel";
 import clsx from "clsx";
-import Footer from "@/components/home/Footer/Footer";
 type ProjectCaseStudyProps = {
     project: Project
 }

@@ -22,3 +22,26 @@
 .active {
     background-color: var(--primary);
 }
+@media (max-width: 768px) {
+    .navigation {
+        width: 100%;
+        gap: 0.5rem;
+        padding: 0.75rem;
+    }
+    .link {
+        padding: 0.5rem 0.75rem;
+    }
+}
+@media (max-width: 500px) {
+    .navigation {
+        justify-content: flex-start;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .navigation::-webkit-scrollbar {
+        display: none;
+    }
+    .link {
+        flex-shrink: 0;
+    }
+}

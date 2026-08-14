@@ -28,6 +28,7 @@ body {
 }
 main {
   flex: 1;
+  padding-inline: 1rem;
 }
 
 a {
@@ -39,4 +40,9 @@ button,
 input,
 textarea {
   font: inherit;
+}
+@media (max-width: 480px) {
+    main {
+        padding-inline: 0.5rem;
+    }
 }

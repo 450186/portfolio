@@ -1,37 +1,126 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Developer Portfolio
+
+My personal developer portfolio, built to showcase my projects, technical skills, education, and experience as a full-stack developer.
+
+The portfolio includes detailed case studies for my main projects, covering their features, technologies, technical challenges, lessons learned, and future improvements.
+
+## Live Site
+
+[View Portfolio](https://portfolio-ten-navy-plza8riyf8.vercel.app/)
+
+## Built With
+
+- Next.js
+- React
+- TypeScript
+- CSS Modules
+- Lucide React
+- React Icons
+
+## Features
+
+- Fully responsive design across desktop, tablet, and mobile
+- Project overview showcasing my main development projects
+- Detailed project case studies
+- Interactive screenshot carousels
+- Technical skills grouped by category
+- Education and background information
+- Contact links
+- Responsive navigation with active route highlighting
+- Reusable React components
+- Dynamic project pages using project data and slugs
+
+## Featured Projects
+
+### JobPilot
+
+A full-stack job application tracking platform designed to help users organise and manage their job search.
+
+**Technologies:** React, TypeScript, Node.js, Express, PostgreSQL
+
+### PlayVault
+
+A personal game library platform that allows users to discover games and manage their own game collection.
+
+**Technologies:** Node.js, Express, EJS, MongoDB, Mongoose, IGDB API
+
+### GrazeGood
+
+A mobile sustainability scanner that allows users to scan food products and view nutritional and environmental information.
+
+**Technologies:** React Native, Expo, Node.js, Express, MongoDB
+
+Each project has its own case study containing screenshots, key features, technical challenges, lessons learned, and planned improvements.
+
+## Project Structure
+
+```text
+app/
+├── about/
+├── contact/
+├── projects/
+│   └── [slug]/
+├── globals.css
+├── layout.tsx
+└── page.tsx
+
+components/
+├── home/
+├── layout/
+├── projects/
+└── ui/
+
+data/
+├── about.ts
+└── projects.ts
+
+types/
+```
+
+The portfolio uses reusable components alongside centralised project and about data, making it easier to maintain and add new projects in the future.
 
 ## Getting Started
 
-First, run the development server:
+Clone the repository:
+
+```bash
+git clone https://github.com/450186/portfolio
+```
+
+Navigate into the project:
+
+```bash
+cd portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open `http://localhost:3000` in your browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Design
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+The portfolio uses a dark interface with orange accents and subtle glow effects.
 
-## Learn More
+The design focuses on keeping project information easy to scan while providing more detailed case studies for visitors who want to learn about the development process behind each project.
 
-To learn more about Next.js, take a look at the following resources:
+The site was built with responsive layouts for desktop, tablet, and mobile devices.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Contact
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+You can find my contact details and professional links on the Contact page of the portfolio.
 
-## Deploy on Vercel
+## Author
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+**Jack Simcox**
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-
+Full-Stack Software Developer

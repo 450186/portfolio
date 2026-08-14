@@ -4,7 +4,7 @@ My personal developer portfolio, built to showcase my projects, technical skills
 
 The portfolio includes detailed case studies for my main projects, covering their features, technologies, technical challenges, lessons learned, and future improvements.
 
-##Screenshot
+## Screenshot
 
 ![Portfolio Homepage](./public/images/screenshots/portfolio-screenshot.png)
 

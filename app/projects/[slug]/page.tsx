@@ -3,7 +3,6 @@ import { notFound } from "next/navigation"
 import ProjectCaseStudy from "@/components/projects/ProjectCaseStudy/ProjectCaseStudy"
 import ProjectNavigation from "@/components/projects/ProjectNavigation/ProjectNavigation"
 import styles from "./page.module.css"
-import Footer from "@/components/home/Footer/Footer"
 export default async function ProjectPage({ 
     params 
 }: {
@@ -23,7 +22,6 @@ export default async function ProjectPage({
         <main className={styles.container}>
             <ProjectNavigation activeSlug={slug} />
             <ProjectCaseStudy project={project} />
-            <Footer />
         </main>
     )
 }

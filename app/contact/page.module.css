@@ -1,0 +1,36 @@
+.main h1 {
+    max-width: 1260px;
+    margin: 2.5rem;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px var(--primary);
+    margin: 20px auto;
+    width: 1260px;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.actions a {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.actions a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px var(--primary);
+}

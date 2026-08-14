@@ -1,0 +1,93 @@
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--surface);
+    color: var(--text);
+    border-radius: 16px;
+    box-shadow: 3px 4px 5px var(--primary);
+    margin: 20px auto;
+}
+.container:first-of-type {
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    gap: 1rem;
+}
+.rightContent {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.container h1 {
+    margin-bottom: 0;
+}
+.headshot {
+    grid-column: 2;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 1px solid var(--primary);
+}
+.educationDiv {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.5rem;
+    padding: 1rem;
+}
+.educationDiv h2 {
+    text-align: center;
+}
+.education {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    box-shadow: 3px 4px 5px var(--primary);
+}
+.educationRow {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+.educationRow h3 {
+    margin: 0;
+}
+.icon {
+    color: var(--primary);
+    width: 24px;
+    height: 24px;
+}
+.education p:first-of-type {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.actions {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+.actions a {
+    border: 1px solid var(--primary);
+    border-radius: 8px;
+    padding: 0.5rem;
+    transition: all 0.2s ease;
+}
+.actions a:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 0 10px var(--primary);
+}
+.container:last-of-type {
+    text-align: center;
+}

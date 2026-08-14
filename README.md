@@ -59,26 +59,33 @@ Each project has its own case study containing screenshots, key features, techni
 ## Project Structure
 
 ```text
-app/
-├── about/
-├── contact/
-├── projects/
-│   └── [slug]/
-├── globals.css
-├── layout.tsx
-└── page.tsx
-
-components/
-├── home/
-├── layout/
-├── projects/
-└── ui/
-
-data/
-├── about.ts
-└── projects.ts
-
-types/
+portfolio/
+├── app/
+│   ├── about/
+│   ├── contact/
+│   ├── projects/
+│   │   └── [slug]/
+│   ├── globals.css
+│   ├── layout.tsx
+│   └── page.tsx
+│
+├── components/
+│   ├── about/
+│   ├── home/
+│   ├── layout/
+│   ├── projects/
+│   └── ui/
+│
+├── data/
+│   ├── about.ts
+│   └── projects.ts
+│
+├── public/
+│   ├── cv/
+│   └── images/
+│       └── screenshots/
+│
+└── types/
 ```
 
 The portfolio uses reusable components alongside centralised project and about data, making it easier to maintain and add new projects in the future.

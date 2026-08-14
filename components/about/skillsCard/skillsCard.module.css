@@ -58,3 +58,43 @@
     font-size: 2rem;
     color: var(--primary);
 }
+@media (max-width: 900px) {
+    .skillGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .skillCard,
+    .skillCard:nth-last-child(2),
+    .skillCard:last-child {
+        grid-column: auto;
+        width: 100%;
+        justify-self: stretch;
+        height: auto;
+        min-height: 180px;
+    }
+}
+@media (max-width: 600px) {
+    .container {
+        padding: 0.75rem;
+    }
+    .skillGrid {
+        grid-template-columns: 1fr;
+    }
+    .skillCard,
+    .skillCard:nth-last-child(2),
+    .skillCard:last-child {
+        grid-column: auto;
+        width: 100%;
+        min-height: auto;
+        height: auto;
+    }
+    .header {
+        gap: 0.75rem;
+    }
+    .icon {
+        font-size: 1.75rem;
+        flex-shrink: 0;
+    }
+    .skills {
+        justify-content: center;
+    }
+}
